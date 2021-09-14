@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phim Hay</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+#container header{
+    width: 100%;
+    height: 120px;
+    float: left;
+}
+#container header .logo{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(49, 49, 49);
+    float: left;
+    padding-top: 0.8%;
+}
+#container header .logo #left{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding-left: 0.5%;
+}
+#container header .logo #left a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#container header .logo #left p{
+    font-size: 15px;
+    color: gray;
+}
+#container header .logo #right{
+    width: 50%;
+    height: 70%;
+    float: left;
+}
+#container header .logo #right{
+    text-align: right;
+    padding-top: 0.2%;
+    display: inline-table;
+    padding-right: 1%;
+}
+#container header .logo #right input{
+    width: 30%;
+    height: 80%;
+    outline: none;
+    border: hidden;
+    padding-left: 1.5%;
+    background-color: rgb(92, 91, 91);
+}
+#container header .logo #right button{
+    width: 7%;
+    height: 80%;
+    background-color: orangered;
+    color: white;
+    border: hidden;
+}
+#container header .logo #under{
+    width: 50%;
+    height: 30%;
+    float: left;
+    text-align: right;
+    padding-right: 5%;
+    color: white;
+}
+#container header .logo #under a{
+    text-decoration: none;
+    color: gray;
+} 
+#container header .logo #under a:hover{
+    color: white;
+}
+#container header .menu{
+    width: 100%;
+    height: 40%;
+    background-color: black;
+    float: left;
+    padding-left: 2%;
+}
+#container header .menu ul{
+    list-style-type: none;
+}
+#container header .menu ul li{
+    width: 110px;
+    height: 98%;
+    max-width: 170px;
+    text-align: center;
+    display: inline-table;
+    line-height: 48px;
+    position: relative;
+    border-left: 1px solid rgb(49, 49, 49);
+}
+#container header .menu ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+#container header .menu ul li > #sub-menu{
+    display: none;
+}
+#container header .menu ul li:hover #sub-menu{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    display: block;
+    position: absolute;
+    width: 180px;
+    font-size: 15px;
+    border-right: 4px solid violet;
+}
+#container header .menu ul .sub-menu1{
+    border-right: 1px solid rgb(49, 49, 49);
+}
+#container header .menu ul li ul li{
+    text-align: left;
+    padding-left: 1%;
+}
+#container header .menu ul .sub-menu2{
+    width: 150px;
+}
+#container section{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+    float: left;
+}
+#container section .img{
+    width: 100%;
+    height: 500px;
+    float: left;
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2020/03/thanh-xuan-co-ban.jpg');
+    background-size: cover;
+    z-index: 1;
+    padding-left: 1%;
+    cursor: pointer;
+}
+#container section .img #luong a{
+    text-decoration: none;
+    color: white;
+}
+#container section .img #luong{
+    width: 8%;
+    height: 4%;
+    background-color: rgb(22, 20, 20);
+    z-index: 3;
+    margin-top: 30%;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+#container section .img #ten{
+    width: 25%;
+    height: 9%;
+    z-index: 3;
+    line-height: 50px;
+}
+#container section .img #ten a{
+    text-decoration: none;
+    color: lightslategray;
+    font-weight: bold;
+}
+#container section .project{
+    width: 100%;
+    height: 85px;
+    padding-top: 1.5%;
+    background-color: rgb(49, 49, 49);
+    float: left;
+}
+#container section .project #tab1{
+    width: 9%;
+    height: 70%;
+    float: left;
+    margin-left: 1%;
+    color: white;
+}
+#container section .project #tab1 .tieu-de{
+    font-size: 13px;
+    float: left;
+    width: 100%;
+    height: 95%;
+    padding-top: 10%;
+}
+#container section .project #tab1 .hr{
+    width: 75%;
+    height: 4%;
+    float: left;
+    background-color: yellowgreen;
+}
+#container section .project #tab2{
+    width: 7%;
+    height: 70%;
+    background-color:yellowgreen;
+    float: left;
+    padding-top: 1%;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#container section .project #tab2 a{
+    font-size: 17px;
+    color: gainsboro;
+    text-decoration: none;
+}
+#container section .project #tab2 a:hover{
+    color: white;
+}
+#container section .project #tab3{
+    width: 7%;
+    height: 70%;
+    float: left;
+    text-align: center;
+    padding-top: 1%;
+}
+#container section .project #tab3 a{
+    font-size: 17px;
+    color: gainsboro;
+    text-decoration: none;
+}
+#container section .project #tab3 a:hover{
+    color: white;
+}
+#container section .project #tab4{
+    width: 69%;
+    height: 70%;
+    float: left;
+    text-align: right;
+    padding-right: 2.3%;
+    padding-top: 0.7%;
+}
+#container section .project #tab4 a{
+    color: rgb(161, 158, 158);
+    font-size: 35px;
+}
+#container section .project #tab4 a:hover{
+    color: green;
+}
+#container section .QC1{
+    width: 100%;
+    height: 356px;
+    float: left;
+    padding-left: 1%;
+    background-color: rgb(49, 49, 49);
+}
+#container section .QC1 #menu1{
+    width: 15.5%;
+    height: 90%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    background-image: url('https://1.bp.blogspot.com/-VkEe8U6PDXc/Xo2dQcicGXI/AAAAAAAAgOM/aTZR44j5rUMFBi91XaohOq4naXbn9a0dwCLcBGAsYHQ/s320/sat-thu-tho-may-1.jpg');
+}
+#container section .QC1 #menu1 a .left{
+    width: 100%;
+    height: 20%;
+    float: left;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+#container section .QC1 #menu1 a .left #HD1{
+    width: 70px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 13px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC1 #menu1 a .middle{
+    width: 100%;
+    height: 65%;
+    float: left;
+    padding-left: 34%;
+    padding-top: 30%;
+}
+#container section .QC1 #menu1 a .middle #icon{
+    font-size: 43px;
+    padding-left: 17%;
+    color: white;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(49, 49, 49);
+    z-index: 3;
+    border-radius: 70px;
+    overflow: hidden;
+    line-height: 70px;
+    display: none;
+}
+#container section .QC1 #menu1 a .right{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0,0,0,.6);
+    float: left;
+}
+#container section .QC1 #menu1 a .right #ten1{
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 7%;
+    background-color: rgba(75, 75, 75, 0.6);
+}
+#container section .QC1 #menu1 a{
+    color: white;
+    text-decoration: none;
+}
+#container section .QC1 #menu1:hover{
+    opacity: 90%;
+}
+#container section .QC1 #menu1:hover .middle #icon{
+    display: block;
+}
+#container section .QC1 #menu2{
+    width: 15.1%;
+    height: 90%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://1.bp.blogspot.com/-Iu66XNWyJCQ/Xo7T8wE-xbI/AAAAAAAAgbc/uqWE-FNaE2I-jfB95XFZJPWvMXy3cccdgCLcBGAsYHQ/s320/Vua-Bo-Cap-The-Scorpion-King-2002-poster.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#container section .QC1 div a .left{
+    width: 100%;
+    height: 20%;
+    float: left;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+#container section .QC1 div a .left #HD2{
+    width: 100px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 13px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC1 div a .middle{
+    width: 100%;
+    height: 65%;
+    float: left;
+    padding-left: 34%;
+    padding-top: 30%;
+}
+#container section .QC1 div a .middle #icon2{
+    font-size: 43px;
+    padding-left: 17%;
+    color: white;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(49, 49, 49);
+    z-index: 3;
+    border-radius: 70px;
+    overflow: hidden;
+    line-height: 70px;
+    display: none;
+}
+#container section .QC1 div a .right{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(75, 75, 75, 0.6);
+    float: left;
+}
+#container section .QC1 div a .right #ten2{
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 7%;
+    background-color: rgba(75, 75, 75, 0.6);
+}
+#container section .QC1 div a{
+    color: white;
+    text-decoration: none;
+}
+#container section .QC1 #menu2:hover{
+    opacity: 90%;
+}
+#container section .QC1 #menu2:hover .middle #icon2{
+    display: block;
+}
+#container section .QC1 #menu3{
+    width: 15.1%;
+    height: 90%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://1.bp.blogspot.com/-ZkL0b28YnWY/Xo7cAfUXLWI/AAAAAAAAgc8/0IXOK30ahDELpxVfE-DbNIdNSWQwkAPNQCLcBGAsYHQ/s320/tinh-yeu-trong-sang.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#container section .QC1 #menu3:hover{
+    opacity: 90%;
+}
+#container section .QC1 #menu3:hover .middle #icon2{
+    display: block;
+}
+#container section .QC1 #menu4{
+    width: 15.1%;
+    height: 90%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://1.bp.blogspot.com/-vWDj9xmpLZ0/Xo7xhit1ZJI/AAAAAAAAgeQ/TvLL63SK7DEXsQOqTW9O76kOe7Pa8HXygCLcBGAsYHQ/s320/truoc-ngay-em-den.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#container section .QC1 #menu4:hover{
+    opacity: 90%;
+}
+#container section .QC1 #menu4:hover .middle #icon2{
+    display: block;
+}
+#container section .QC1 #menu5{
+    width: 15.1%;
+    height: 90%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://1.bp.blogspot.com/-sjZqaCli7L4/XpAlshsGj-I/AAAAAAAAgoQ/Wq8-OrEosRkc75xyrmjIKXoTQzItC2y9wCLcBGAsYHQ/s320/Ky-Sinh-Thu-Phan-1-Parasyte-Live-action-Part-1-2014.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#container section .QC1 #menu5:hover{
+    opacity: 90%;
+}
+#container section .QC1 #menu5:hover .middle #icon2{
+    display: block;
+}
+#container section .QC1 #menu6{
+    width: 15.1%;
+    height: 90%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://1.bp.blogspot.com/-OD_EYO2GrNo/XpGHllCXAkI/AAAAAAAAg1g/N2wf8uNzqHIgS-bVu3IwvLcf8Gwee-7fgCLcBGAsYHQ/s320/Me-Ke-2-Dua-Con-Toi-Loi-Jan-Dara-the-Beginning-2012-poster.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#container section .QC1 #menu6 .left #HD2{
+    width: 180px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 13px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC1 #menu6:hover{
+    opacity: 90%;
+}
+#container section .QC1 #menu6:hover .middle #icon2{
+    display: block;
+}
+#container section .project2{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(49, 49, 49);
+    float: left;
+}
+#container section .project2 #tab1{
+    width: 17%;
+    height: 88%;
+    float: left;
+    margin-left: 1%;
+    padding-top: 0.2%;
+    color: white;
+}
+#container section .project2 #tab1 .tieu-de{
+    font-size: 13px;
+    float: left;
+    width: 100%;
+    height: 87%;
+}
+#container section .project2 #tab1 .hr{
+    width: 40%;
+    height: 5.3%;
+    float: left;
+    background-color: yellowgreen;
+}
+#container section .QC2{
+    width: 100%;
+    height: 300px;
+    float: left;
+    padding-left: 1%;
+    padding-top: 1%;
+    background-color: rgb(49, 49, 49);
+}
+#container section .QC2 #menu1{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    background-image: url('https://lh5.googleusercontent.com/proxy/zuT-66qkQWUUQX97Wm_11onu8EJWTC86QBSz2AKscRdUU6Aj129qgeSYDnc95MswOWmcugtbcN2NkldUZwWwYAkEqeD2-aJB2uXJrivx7RcNIJxvldsmly-x3JBMlzU=w300');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC2 #menu1 a .left{
+    width: 100%;
+    height: 20%;
+    float: left;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+#container section .QC2 #menu1 a .left #HD1{
+    width: 115px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC2 #menu1 a .middle{
+    width: 100%;
+    height: 65%;
+    float: left;
+    padding-left: 34%;
+    padding-top: 30%;
+}
+#container section .QC2 #menu1 a .middle #icon{
+    font-size: 33px;
+    padding-left: 14%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(49, 49, 49);
+    z-index: 3;
+    border-radius: 50px;
+    overflow: hidden;
+    line-height: 50px;
+    display: none;
+}
+#container section .QC2 #menu1 a .right{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(75, 75, 75, 0.6);
+    float: left;
+}
+#container section .QC2 #menu1 a .right #ten1{
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 7%;
+}
+#container section .QC2 #menu1 a{
+    color: white;
+    text-decoration: none;
+}
+#container section .QC2 #menu1:hover{
+    opacity: 83%;
+}
+#container section .QC2 #menu1:hover .middle #icon{
+    display: block;
+}
+#container section .QC2 #menu2{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://lh5.googleusercontent.com/proxy/ZMNrNigdCWq-2PjQtce1Df_EPJI6PKJYroWfw7snPCll7pe_gncEcuD4st1VzzI3owZP9JX24hg4-UjGE7bifkvk8HHJIxwTHHSm7o4qPZtQhxPIX3MElzGBwgW44JF_49xiZg=w300');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC2 div a .left{
+    width: 100%;
+    height: 20%;
+    float: left;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+#container section .QC2 div a .left #HD2{
+    width: 65px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC2 div a .middle{
+    width: 100%;
+    height: 65%;
+    float: left;
+    padding-left: 34%;
+    padding-top: 30%;
+}
+#container section .QC2 div a .middle #icon2{
+    font-size: 33px;
+    padding-left: 14%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(49, 49, 49);
+    z-index: 3;
+    border-radius: 50px;
+    overflow: hidden;
+    line-height: 50px;
+    display: none;
+}
+#container section .QC2 div a .right{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(75, 75, 75, 0.6);
+    float: left;
+}
+#container section .QC2 div a .right #ten2{
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 7%;
+}
+#container section .QC2 div a{
+    color: white;
+    text-decoration: none;
+}
+#container section .QC2 #menu2:hover{
+    opacity: 83%;
+}
+#container section .QC2 #menu2:hover .middle #icon2{
+    display: block;
+}
+#container section .QC2 #menu3{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://lh4.googleusercontent.com/proxy/85giHy12ijCQwmSq08x9oFBdbNCOerJfyM9NxRLAOeXVAHe2y242CW8bzc-jxbjgVInegcpGD3ef2en8T11TMMKdb0PyEYMZGlzT6h_ZP_-1vUBJLcH66lcBNhMP6o0QwT90DjUVoVlRWw=w300');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC2 #menu3 a .left #HD2{
+    width: 138px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC2 #menu3 a .right #ten2{
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 2%;
+}
+#container section .QC2 #menu3 a{
+    color: white;
+    text-decoration: none;
+}
+#container section .QC2 #menu3:hover{
+    opacity: 83%;
+}
+#container section .QC2 #menu3:hover .middle #icon2{
+    display: block;
+}
+#container section .QC2 #menu4{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://lh3.googleusercontent.com/proxy/qukrKK0h2EqXYTj1IV-pAQ5Uyjn-_TAR_klzeZAuEdvf8tiU0ACLmcYbINb-Uo7dUQXV-Ix9q50uLSME9x8uxMr1tO6KcKU-gw935dsSVEFq4vlKrh8XYOYjmfYCYkC-VKiTM8iaK0u-MErNrJDLHLJnJgV7NdR6j1ishRcU=w300');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC2 #menu4 a .left #HD2{
+    width: 138px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC2 #menu4 a .right #ten2{
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 2%;
+}
+#container section .QC2 #menu4 a{
+    color: white;
+    text-decoration: none;
+}
+#container section .QC2 #menu4:hover{
+    opacity: 83%;
+}
+#container section .QC2 #menu4:hover .middle #icon2{
+    display: block;
+}
+#container section .QC2 #menu5{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://lh5.googleusercontent.com/proxy/OC9CP0GbFQxPya4nEA8XUrjMRmAa6zi4SY8861lD760ilsx0EdsFhrlaJ8WqE4k5M4ZZ-j_XOs1GnDvin4YdHlLzwMNJCAGeJTLE1GAF_xo7AkKzJLogxwIsXe-QvUSOUt8vtGwgY6I28FhBLiVyRnDlZv3SKoYBx1bFxFl_RDP8ODNAJiTbJwQ=w300');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC2 #menu5 a .left #HD2{
+    width: 138px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC2 #menu5 a{
+    color: white;
+    text-decoration: none;
+}
+#container section .QC2 #menu5:hover{
+    opacity: 83%;
+}
+#container section .QC2 #menu5:hover .middle #icon2{
+    display: block;
+}
+#container section .QC2 #menu6{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://lh4.googleusercontent.com/proxy/YqWBk84Wzy0mrQaeU-EaQSObhXT0HmS_vtlHmPalsMlj1rpQ-dH1RTHjdn_5KtUvzdR9U5l4og8jDHCnmKFxjP_eBxAOwoJrQ_W15zT0o9uumFYOtdNd=w300');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC2 #menu6 a .left #HD2{
+    width: 125px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC2 #menu6 a .right #ten2{
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 2%;
+}
+#container section .QC2 #menu6 a{
+    color: white;
+    text-decoration: none;
+}
+#container section .QC2 #menu6:hover{
+    opacity: 83%;
+}
+#container section .QC2 #menu6:hover .middle #icon2{
+    display: block;
+}
+#container section .QC2 #menu7{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://lh3.googleusercontent.com/proxy/6yLhCXRPu9ol3Pn5_BjkJqVmFVr03yIHE9XRi3mJ0kbguYGXNEjSQgTkuwGmM176-UVZdHDfgANkXRfEsEMehmEBwXIKL5lbBiDQTCqZZ8Mn-HQc8smjf0MqK00RxLIIW2VEcKqfkBPh=w300');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC2 #menu7 a .left #HD2{
+    width: 118px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC2 #menu7 a{
+    color: white;
+    text-decoration: none;
+}
+#container section .QC2 #menu7:hover{
+    opacity: 83%;
+}
+#container section .QC2 #menu7:hover .middle #icon2{
+    display: block;
+}
+#container section .project1{
+    width: 100%;
+    height: 85px;
+    padding-top: 1.5%;
+    background-color: rgb(49, 49, 49);
+    float: left;
+}
+#container section .project1 #tab1{
+    width: 11.5%;
+    height: 70%;
+    float: left;
+    margin-left: 1%;
+    color: white;
+}
+#container section .project1 #tab1 .tieu-de{
+    font-size: 13px;
+    float: left;
+    width: 100%;
+    height: 95%;
+    padding-top: 10%;
+}
+#container section .project1 #tab1 .hr{
+    width: 60%;
+    height: 4%;
+    float: left;
+    background-color: yellowgreen;
+}
+#container section .project1 #tab3{
+    width: 7%;
+    height: 70%;
+    float: left;
+    text-align: center;
+    padding-top: 1%;
+}
+#container section .project1 #tab3 a{
+    font-size: 17px;
+    color: gainsboro;
+    text-decoration: none;
+}
+#container section .project1 #tab3 a:hover{
+    color: white;
+}
+#container section .project1 #tab2{
+    width: 7%;
+    height: 70%;
+    background-color:yellowgreen;
+    float: left;
+    padding-top: 1%;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#container section .project1 #tab2 a{
+    font-size: 17px;
+    color: gainsboro;
+    text-decoration: none;
+}
+#container section .project1 #tab2 a:hover{
+    color: white;
+}
+#container section .project1 #tab4{
+    width: 7%;
+    height: 70%;
+    float: left;
+    text-align: center;
+    padding-top: 1%;
+}
+#container section .project1 #tab4 a{
+    font-size: 17px;
+    color: gainsboro;
+    text-decoration: none;
+}
+#container section .project1 #tab4 a:hover{
+    color: white;
+}
+#container section .project1 #tab5{
+    width: 59%;
+    height: 70%;
+    float: left;
+    text-align: right;
+    padding-right: 2%;
+}
+#container section .project1 #tab5 a{
+    color: rgb(161, 158, 158);
+    font-size: 35px;
+}
+#container section .project1 #tab5 a:hover{
+    color: green;
+}
+#container section .QC3{
+    width: 100%;
+    height: 300px;
+    float: left;
+    padding-left: 1%;
+    padding-top: 1%;
+    background-color: rgb(49, 49, 49);
+    margin-bottom: 2%;
+}
+#container section .QC3 #menu1{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    background-image: url('https://1.bp.blogspot.com/-H4EyEABQCOQ/YKnZspiIKOI/AAAAAAAAGdc/y14LtlCUfIINlvQEwl4kKnGhaByzK1iHwCLcBGAsYHQ/s320/Legend-of-Exorcism-2-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC3 div a .left{
+    width: 100%;
+    height: 20%;
+    float: left;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+#container section .QC3 div a .left #HD1{
+    width: 133px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC3 div a .middle{
+    width: 100%;
+    height: 65%;
+    float: left;
+    padding-left: 34%;
+    padding-top: 30%;
+}
+#container section .QC3 div a .middle #icon{
+    font-size: 33px;
+    padding-left: 14%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(49, 49, 49);
+    z-index: 3;
+    border-radius: 50px;
+    overflow: hidden;
+    line-height: 50px;
+    display: none;
+}
+#container section .QC3 div a .right{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(75, 75, 75, 0.6);
+    float: left;
+}
+#container section .QC3 div a .right #ten1{
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 7%;
+}
+#container section .QC3 div a{
+    color: white;
+    text-decoration: none;
+}
+#container section .QC3 #menu1:hover{
+    opacity: 83%;
+}
+#container section .QC3 #menu1:hover .middle #icon{
+    display: block;
+}
+#container section .QC3 #menu2{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://ss-images.saostar.vn/wp700/pc/1606990295817/128856753_3437670079684225_4761659176983702972_o(1).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC3 #menu2 a .left #HD1{
+    width: 118px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC3 #menu2:hover{
+    opacity: 83%;
+}
+#container section .QC3 #menu2:hover .middle #icon{
+    display: block;
+}
+#container section .QC3 #menu3{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://pic5.iqiyipic.com/image/20200329/b8/48/a_100395974_m_601_zh-CN_260_360.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC3 #menu3 a .left #HD1{
+    width: 118px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC3 #menu3 a .right #ten1{
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 2%;
+}
+#container section .QC3 #menu3:hover{
+    opacity: 83%;
+}
+#container section .QC3 #menu3:hover .middle #icon{
+    display: block;
+}
+#container section .QC3 #menu4{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://1.bp.blogspot.com/-y-GHXCL_SdU/YKndroDDIdI/AAAAAAAAGew/MgfyF2_qDkUqpCMS5eKlNQOMAm0zhie7QCLcBGAsYHQ/s320/MMV25078142F3EE931C7643E14A80BDB7FFF.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC3 #menu4 a .left #HD1{
+    width: 70px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC3 #menu4:hover{
+    opacity: 83%;
+}
+#container section .QC3 #menu4:hover .middle #icon{
+    display: block;
+}
+#container section .QC3 #menu5{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://mycima.nl/wp-content/uploads/2020/12/Vanquishing-the-Demons-2020.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC3 #menu5 a .left #HD1{
+    width: 70px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;  
+}
+#container section .QC3 #menu5:hover{
+    opacity: 83%;
+}
+#container section .QC3 #menu5:hover .middle #icon{
+    display: block;
+}
+#container section .QC3 #menu6{
+    width: 12.76%;
+    height: 95%;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+    background-image: url('https://i.imgur.com/Rb6U1eQ.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container section .QC3 #menu6 a .left #HD1{
+    width: 115px;
+    height: 34%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1%;
+}
+#container section .QC3 #menu6 a .right #ten1{
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 2%;
+}
+#container section .QC3 #menu6:hover{
+    opacity: 83%;
+}
+#container section .QC3 #menu6:hover .middle #icon{
+    display: block;
+}
+#container footer .final{
+    width: 100%;
+    height: 165px;
+    background-color: black;
+    float: left;
+}
+#container footer .final #hr3{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    float: left;
+}
+#container footer .final #img2{
+    width: 100%;
+    height: 45%;
+    float: left;
+    padding-left: 47%;
+    padding-top: 1.5%;
+}
+#container footer .final #footer{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    float: left;
+    padding-top: 0.8%;
+    color: white;
+    font-size: 15px;
+    margin-top: 1%;
+}
+#container footer .final #footer2{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    float: left;
+    font-size: 15px;
+    color: grey;
+    padding-top: 0.5%;
+}
+#container footer .final #footer2 p a{
+    color: white;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="logo">
+                <div id="left">
+                    <a href="#">
+                        <h1>
+                            <i class="fa fa-film"></i>
+                            <span>Phim Hay</span>
+                        </h1>
+                    </a>
+                    <p>Kho phim miễn phí tốt nhất</p>
+                </div>
+                <div id="right">
+                    <input type="search" name="search" placeholder="Search...">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+                <div id="under">
+                    <a href="#">Đăng nhập</a> / <a href="#">Đăng kí</a>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li class="sub-menu3"><a href="#">Thể loại <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                        <ul id="sub-menu">
+                            <li><a href="#">Đam mỹ</a></li>
+                            <li><a href="#">Hài hước</a></li>
+                            <li><a href="#">Hành động</a></li>
+                            <li><a href="#">Viễn tưởng</a></li>
+                            <li><a href="#">Tâm lý</a></li>
+                            <li><a href="#">Tình cảm</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Quốc gia <i class="fa fa-sort-desc" aria-hidden="true"></i></a></li>
+                    <li class="sub-menu2"><a href="#">Phim theo năm <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                        <ul id="sub-menu">
+                            <li><a href="#">2017</a></li>
+                            <li><a href="#">2020</a></li>
+                            <li><a href="#">2021</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu3"><a href="#">Anime <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                        <ul id="sub-menu">
+                            <li><a href="#">Anime bộ</a></li>
+                            <li><a href="#">Anime hài hước</a></li>
+                            <li><a href="#">Anime nhập vai</a></li>
+                            <li><a href="#">Anime kinh dị</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu1"><a href="#">Khác <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                        <ul id="sub-menu">
+                            <li><a href="#">Phim bộ</a></li>
+                            <li><a href="#">Phim lẻ</a></li>
+                            <li><a href="#">Phim hot</a></li>
+                            <li><a href="#">Phim sắp chiếu</a></li>
+                            <li><a href="#">Phim chiếu rạp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div class="img">
+                <div id="luong"><a href="#">Tập 47/47 VietSub</a></div>
+                <div id="ten"><a href="#"><h1>Thanh Xuân Có Bạn (Mùa 2)</h1></a></div>
+            </div>
+            <div class="project">
+                <div id="tab1">
+                    <div class="tieu-de">
+                        <h2>Phim đề cử</h2>
+                    </div>
+                    <div class="hr"></div>
+                </div>
+                <div id="tab2">
+                    <a href="#">Phim lẻ</a>
+                </div>
+                <div id="tab3">
+                    <a href="#">Phim bộ</a>
+                </div>
+                <div id="tab3">
+                    <a href="#">Phim rạp</a> 
+                </div>
+                <div id="tab4">
+                    <a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="QC1">
+                <div id="menu1">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD1"><p>HD VietSub</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten1"><p>Sát Thủ Thợ Máy</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu2">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD2"><p>HD Thuyết Minh</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon2"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten2"><p>Vua Bò Cạp 1</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu3">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD2"><p>HD Thuyết Minh</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon2"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten2"><p>Tình Yêu Trong Sáng</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu4">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD2"><p>HD Thuyết Minh</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon2"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten2"><p>Trước Ngày Em Đến</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu5">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD2"><p>HD Thuyết Minh</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon2"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten2"><p>Ký Thú Sinh 1</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu6">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD2"><p>HD Thuyết Minh + Vietsub HD</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon2"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten2"><p>Mẹ Kế</p></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="project2">
+                <div id="tab1">
+                    <div class="tieu-de">
+                        <h2>Phim mới cập nhật</h2>
+                    </div>
+                    <div class="hr"></div>
+                </div>
+            </div>
+            <div class="QC2">
+                <div id="menu1">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD1"><p>Tập 07 / 12 VietSub</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten1"><p>Cá Trên Trời</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu2">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD2"><p>HD Trailer</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon2"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten2"><p>Mùa Xuân xanh Từ Ta</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu3">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD2"><p>Tập 21 / 21 Thuyết Minh</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon2"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten2"><p>Mộ Vương Chi Vương <br>Phần 2: Hàn Thiết Đấu</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu4">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD2"><p>Tập 20 / 20 Thuyết Minh</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon2"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten2"><p>Mộ Vương Chi Vương <br>Phần 1</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu5">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD2"><p>Tập 07 / 12 HD VietSub</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon2"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten2"><p>Hố Đen</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu6">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD2"><p>Tập 01 / 24 HD Trailer</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon2"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten2"><p>Tôi Và Thời Niên Thiếu <br>Của Tôi</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu7">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD2"><p>Tập 05 / 16 VietSub</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon2"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten2"><p>Sở Hữu</p></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="project1">
+                <div id="tab1">
+                    <div class="tieu-de">
+                        <h2>Phim theo năm</h2>
+                    </div>
+                    <div class="hr"></div>
+                </div>
+                <div id="tab2">
+                    <a href="#">2021</a>
+                </div>
+                <div id="tab3">
+                    <a href="#">2020</a>
+                </div>
+                <div id="tab4">
+                    <a href="#">2019</a> 
+                </div>
+                <div id="tab4">
+                    <a href="#">2018</a> 
+                </div>
+                <div id="tab5">
+                    <a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="QC3">
+                <div id="menu1">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD1"><p>Tập 13 / 13 Thuyết Minh</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten1"><p>Thiên Bảo Phục Yêu Lục</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu2">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD1"><p>Tập 12 / 12 VietSub</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten1"><p>Đối Tác Trào Lưu 2</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu3">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD1"><p>Tập 12 / 12 VietSub</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten1"><p>Thực Tập Sinh Thần Tượng - 2020</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu4">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD1"><p>HD VietSub</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten1"><p>Kẻ Du Mục Cập Nhật</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu5">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD1"><p>HD VietSub</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten1"><p>Thiếu Lâm Hàng Ma</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="menu6">
+                    <a href="#">
+                        <div class="left">
+                            <div id="HD1"><p>Tập 47 / 47 VietSub</p></div>
+                        </div>
+                        <div class="middle">
+                            <div id="icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="right">
+                            <div id="ten1"><p>Thanh Xuân Có Bạn (mùa 2)</p></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="final">
+                <div id="hr3"></div>
+                <div id="img2"><img alt="Kho Phim 24h" width="80" src="//lh3.googleusercontent.com/-YFNIBA0iqXE/XF3FZv7E-dI/AAAAAAAAES8/FDrJSSztIfUPw10b4sdttQx3V00rB1vnQCLcBGAs/s60/kho-phim-Plus.png"></div>
+                <div id="footer">
+                    <p>Copyright © 2021 Giaodienblog.com - All Rights Reserved</p>
+                </div>
+                <div id="footer2">
+                    <p><i class="fa fa-line-chart"></i> Liên hệ mua template: <a href="#">Nguyễn Anh Kiệt</a> </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
